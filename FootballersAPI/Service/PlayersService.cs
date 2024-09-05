@@ -17,5 +17,10 @@ namespace FootballersAPI.Service
         {
             return await _context.Players.ToListAsync();
         }
+
+        public async Task<Player?> GetPlayerById(int id)
+        {
+            return await _context.Players.FindAsync(id);
+        }
     }
 }

@@ -1,5 +1,7 @@
+import PlayerList from "./Components/PlayerList";
+
 function App() {
-  return <h1>Hello world</h1>;
+  return <PlayerList />;
 }
 
 export default App;
